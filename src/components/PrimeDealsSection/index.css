@@ -1,0 +1,56 @@
+.primedeals-list-heading {
+    color: #475569;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 48px;
+  }
+  
+  .products-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    .products-list{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .register-prime-img {
+    margin-top: 30px;
+  }
+  
+  .primedeals-loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+  }
+  
+
+  .all-products-section {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Space out items */
+    margin: 10px; /* Add margin for spacing */
+  }
+  
+  .filters-group-container {
+    width: 25%; /* Set width for the filters */
+    margin-right: 20px; /* Add space between filters and products */
+  }
+  
+  .all-products-container {
+    width: 100%; /* Set width for the product list */
+  }
+  
+/* Hide filters on mobile */
+@media only screen and (max-width: 768px) {
+  .filters-section {
+    display: none;
+  }
+}
+

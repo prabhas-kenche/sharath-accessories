@@ -1,0 +1,125 @@
+.home-products {
+  position: relative; /* Needed for the pseudo-element positioning */
+  background-image: url('https://3.bp.blogspot.com/-zka4TWwz3ZM/WjQjLhMVNrI/AAAAAAABT18/tpJM9Owjtwwqc-ZlMlUiBrxL8By3tF55wCLcBGAs/s1600/best-tech-accessories.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  width: 100%;
+  padding-top: 200px;
+}
+
+.home-products::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Light black shadow */
+  z-index: 1; /* Ensure it's on top of the background */
+}
+
+/* To ensure the content inside is above the shadow */
+.home-products > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.home-products .content {
+  position: relative;
+  z-index: 2;
+  
+}
+
+.home-products h1, 
+.home-products p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Light shadow for better text readability */
+}
+
+button {
+  background-color: rgb(38, 38, 168);
+  height: 40px;
+  width: 130px;
+  border-radius: 5px;
+  border-width: 0;
+  color: #ffffff;
+}
+
+
+.product-sections {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    max-width: 1110px;
+  }
+  
+
+.register-prime-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75vw;
+  height: 500px;
+}
+
+
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Media query for larger devices */
+@media (min-width: 1024px) {
+  .banner {
+    width: 100%; /* Decrease the width on larger screens */
+    height: 400px; /* Decrease the height on larger screens */
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.swiper-button-prev, .swiper-button-next {
+  display: none; /* Hides both the previous and next navigation arrows */
+}
+
+
+
+body, html {
+  height: 100%;
+  overflow: auto;
+}
+
+.product-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+
+/* Ensure the body and html are scrollable */
+
+
+/* Ensure the main product section is scrollable */
+
+
+

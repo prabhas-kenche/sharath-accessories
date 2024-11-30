@@ -1,0 +1,63 @@
+.profile-container {
+    padding: 20px;
+  }
+  
+  .profile-header {
+    text-align: center;
+  }
+  
+  .profile-options ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .profile-options li {
+    margin: 10px 0;
+  }
+  
+  .profile-options a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+  }
+  
+  .profile-options a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .login-buttons button {
+    margin-top: 10px;
+  }
+  
+  .login-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .or-text {
+    margin: 0 10px;
+  }
+  
+  .footer-note {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .mobile-button {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mobile-logo {
+    margin-right: 8px;
+  }
+  
